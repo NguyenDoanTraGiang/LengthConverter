@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">LengthConverter</string>
+  <string name="convertFromlabel">convertFromLabel</string>
+  <string name="fromDescription">From:</string>
+  <string name="hint">Enter amount</string>
+  <string name="convertTolabel">convertToLabel</string>
+  <string name="toDescription">To:</string>
+  <string name="convertBtnLabel">Convert</string>
+  <string name="settingBtnLabel">Setting</string>
+  <string name="result">result</string>
+    <string name="settingDescription">Change Units</string>
+  <string name="convertFromDescription">Convert From:</string>
+  <string name="applyBtnLabel">Apply</string>
+  <string name="convertToDescription">Convert To:</string>
+
+  <string-array name="units">
+    <item>Meter</item>
+    <item>Millimeter</item>
+    <item>Centimeter</item>
+    <item>Kilometre</item>
+    <item>Foot</item>
+    <item>Yard</item>
+    <item>Mile</item>
+  </string-array>
+</resources>

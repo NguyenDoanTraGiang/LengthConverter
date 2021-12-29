@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/fromDescription"
+          android:textAlignment="center"
+          android:textSize="24sp" />
+
+        <TextView
+          android:id="@+id/fromUnit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/convertFromlabel"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+        <EditText
+          android:id="@+id/amount"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/hint"
+          android:importantForAutofill="no"
+          android:inputType="number"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/toDescription"
+          android:textAlignment="center"
+          android:textSize="24sp" />
+
+        <TextView
+          android:id="@+id/toUnit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/convertTolabel"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/result"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:text="@string/result"
+          android:textAlignment="center"
+          android:textSize="24sp" />
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30sp"
+        android:onClick="convertBtnClicked"
+        android:text="@string/convertBtnLabel"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/settingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="30sp"
+        android:onClick="settingBtnClicked"
+        android:text="@string/settingBtnLabel"
+        android:textSize="24sp" />
+    </LinearLayout>
+  </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
